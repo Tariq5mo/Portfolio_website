@@ -1,0 +1,356 @@
+:root {
+	--default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--heading-font: "Raleway", sans-serif;
+	--nav-font: "Poppins", sans-serif;
+}
+
+:root {
+	--background-color: #ffffff;
+	/* Background color for the entire website, including individual sections */
+	--default-color: brown;
+	/* Default color used for the majority of the text content across the entire website */
+	--heading-color: #f0f0f0;
+	/* Color for headings, subheadings and title throughout the website */
+	--accent-color: crimson;
+	/* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+	--surface-color: #ffffff;
+	/* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+	--contrast-color: #000016;
+	/* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--default-font);
+	scroll-behavior: smooth;
+}
+
+header {
+	background-color: var(--heading-color);
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 150px;
+}
+
+.logo {
+	text-decoration: none;
+	color: var(--default-color);
+	font-weight: 800;
+	font-size: 1.8em;
+	text-transform: uppercase;
+
+}
+
+.navigation a {
+	text-decoration: none;
+	color: var(--default-color);
+	font-size: 1.1em;
+	padding-left: 30px;
+	font-weight: 600;
+}
+
+.navigation a:hover {
+	color: var(--accent-color);
+}
+
+section {
+	padding: 100px 150px;
+}
+
+.main {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(/img/photo.JPG);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+.main h2 {
+	color: var(--default-color);
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.main h2 span {
+	display: inline-block;
+	margin-top: 10px;
+	color: crimson;
+	font-size: 1.9em;
+	font-weight: 600;
+}
+
+.main h3 {
+	color: var(--default-color);
+	font-size: 1.4em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.main-btn {
+	background-color: var(--default-color);
+	color: var(--background-color);
+	text-decoration: none;
+	font-size: 1.1em;
+	font-weight: 600;
+	display: inline-block;
+	padding: .9375em 2em;
+	letter-spacing: 1px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+	transition: .7s ease;
+}
+
+.main-btn:hover {
+	background-color: var(--accent-color);
+	color: unset;
+	transform: scale(1.1);
+}
+
+.class-icons a {
+	color: var(--default-color);
+	font-size: 1.43em;
+	padding-right: 30px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 2.2em;
+	margin-bottom: 30px;
+	font-weight: 800;
+	color: var(--default-color);
+}
+
+.contain {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card {
+	background-color: var(--surface-color);
+	width: 21.25em;
+	box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+	border-radius: 10px;
+	padding: 25px;
+	margin: 15px;
+	transition: .7s ease;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.icon {
+	color: var(--default-color);
+	font-size: 8em;
+	text-align: center;
+}
+
+.info {
+	text-align: center;
+}
+
+.info h3 {
+	color: var(--default-color);
+	font-size: 1.2em;
+	font-weight: 700;
+	margin: 10px;
+}
+
+.projects {
+	background-color: black;
+}
+
+.projects .contain {
+	margin-top: 30px;
+}
+
+.project-card {
+	background-color: var(--surface-color);
+	border: 1px solid var(--surface-color);
+	min-height: 19em;
+	width: 21.25em;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: 20px;
+	transition: .7s ease;
+	display: grid;
+	align-items: end;
+}
+
+.project-card:hover {
+	transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+	opacity: .8;
+}
+
+.project-image img {
+	width: 100%;
+
+}
+
+.project-image air {
+	width: 100%;
+}
+
+.bi-ubuntu {
+	font-size: 6em;
+	color: orangered;
+	display: flex;
+	justify-content: center;
+}
+
+.project-info {
+	padding: 1em;
+}
+
+.category {
+	font-size: .9em;
+	color: var(--contrast-color);
+}
+
+.project-title {
+	display: flex;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.more-details {
+	color: var(--default-color);
+	text-decoration: none;
+}
+
+.more-details:hover {
+	color: var(--accent-color);
+}
+
+.cards .icon {
+	color: var(--default-color);
+	font-size: 5em;
+	text-align: center;
+}
+
+.cards .info h3 {
+	color: var(--default-color);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin: 10px;
+}
+
+.cards .info p {
+	color: var(--contrast-color);
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.footer {
+	background-color: var(--contrast-color);
+	font-size: 1.6em;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.footer-title {
+	font-size: .6em;
+	font-weight: 600;
+}
+
+.footer .class-icons {
+	font-size: .5em;
+	font-weight: 600;
+}
+
+.footer-title span {
+	color: var(--default-color);
+}
+
+/*--------------------------------------------------------------
+# Resume Section
+--------------------------------------------------------------*/
+.resume .resume-title {
+	color: crimson;
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.resume .resume-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid var(--accent-color);
+	position: relative;
+
+}
+
+.pb-0 {
+	padding-bottom: 0 !important
+}
+
+.resume .resume-item h4 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: color-mix(in srgb, var(--default-color), transparent 20%);
+	margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+	font-size: 16px;
+	padding: 5px 15px;
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+	padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+	padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+	padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	left: -9px;
+	top: 0;
+	background: var(--background-color);
+	border: 2px solid var(--accent-color);
+}
+
+.col-lg-6 {
+	flex: 0 0 auto;
+	width: 50%
+}
+
